@@ -1,2 +1,2 @@
 # Laraperpus
-Belajar laravel
+Applikasi Perpustakaan menggunakan laravel
