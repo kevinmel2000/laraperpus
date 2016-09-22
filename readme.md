@@ -1,2 +1,2 @@
 # Laraperpus
-Applikasi Perpustakaan menggunakan laravel
+Aplikasi Perpustakaan menggunakan laravel
