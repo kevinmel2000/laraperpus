@@ -35,7 +35,7 @@ class BooksController extends Controller
         //Request ajax pada dataTables
         if( $request->ajax() ) {
             //load relasi dari book ke author dengan method with ( eager loading ) mirip join tabel
-            $books = Book::with( 'author'     );
+            $books = Book::with( 'author' );
             return Datatables::of( $books )
                      ->addColumn( 'action', function( $book ) {
                        return view( 'datatable._action', [

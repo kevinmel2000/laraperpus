@@ -60,7 +60,7 @@ Route::get( 'books/{book}/borrow', [
     'uses'       => 'BooksController@borrow'
 ]);
 
-// Route untuk melakukan pengembalina oleh member
+// Route untuk melakukan pengembalian oleh member
 Route::put( 'book/{book}/return', [
     'middleware' => [ 'auth', 'role:member' ],
     'as'         => 'member.books.return',
