@@ -154,7 +154,7 @@ class BooksController extends Controller
     public function update( UpdateBookRequest $request, $id )
     {
         $book = Book::find( $id );
-        if( !$book->update( $request->all() ) ) return redirect()->back();
+        $book->update($request->all());
 
         if( $request->hasFile( 'cover' ) ) {
             // mengambil cover yang diambil berikut ekstensinya
